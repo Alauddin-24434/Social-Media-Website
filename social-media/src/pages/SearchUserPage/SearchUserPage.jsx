@@ -16,7 +16,7 @@ const SearchUserPage = () => {
     const fetchData = async () => {
         try {
             // Make a single request to fetch combined user data and posts
-            const response = await axios.get(`https://social-media-backend-gold.vercel.app/combinedData?userId=${id}`);
+            const response = await axios.get(`hhttp://localhost:5000/combinedData?userId=${id}`);
 
             // Extract userData and userPosts from the response data
             const { userData, userPosts } = response.data;

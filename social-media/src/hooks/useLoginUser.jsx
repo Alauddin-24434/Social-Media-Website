@@ -7,7 +7,7 @@ const useLoginUser = () => {
     const {data, isFetching,error,refetch,isLoading}=useQuery({
         queryKey:['users'],
         queryFn: async ()=>{
-            const data= await fetch(`https://social-media-backend-gold.vercel.app/loginUser?email=${currentUser}`)
+            const data= await fetch(`hhttp://localhost:5000/loginUser?email=${currentUser}`)
             return await data.json()
         }
        })

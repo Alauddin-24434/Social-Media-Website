@@ -82,7 +82,7 @@ const CreateUserPost = () => {
 
             };
 
-            const response = await axios.post('https://social-media-backend-gold.vercel.app/createUserPost', postData);
+            const response = await axios.post('hhttp://localhost:5000/createUserPost', postData);
             console.log('Post successful:', response.data);
             setText('');
             setImage(null);

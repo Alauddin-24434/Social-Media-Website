@@ -23,7 +23,7 @@ const UserCreatedPost = () => {
     const fetchData = async () => {
         try {
             // Make GET request to fetch post data
-            const response = await axios.get(`https://social-media-backend-gold.vercel.app/combinedData?userId=${loginUser._id}`);
+            const response = await axios.get(`hhttp://localhost:5000/combinedData?userId=${loginUser._id}`);
             // Update state with fetched data
             // Extract userData and userPosts from the response data
             const { userData, userPosts } = response.data;

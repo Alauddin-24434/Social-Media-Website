@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         {
             path:'/SearchProfile/:id',
             element:<SearchUserPage/>,
-            // loader: ({ params }) => fetch(`https://social-media-backend-gold.vercel.app/SearchProfile/${[params.id]}`)
+            // loader: ({ params }) => fetch(`hhttp://localhost:5000/SearchProfile/${[params.id]}`)
         },
         
       

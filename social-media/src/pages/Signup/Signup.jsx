@@ -93,7 +93,7 @@ const Signup = () => {
             // Start loading if currentUser is null
             setLoading(currentUser === null);
 
-            const result = await axios.post('https://social-media-backend-gold.vercel.app/createUser', {
+            const result = await axios.post('hhttp://localhost:5000/createUser', {
                 uid: currentUser?.uid,
                 name: formData.name,
                 email: formData.email,
