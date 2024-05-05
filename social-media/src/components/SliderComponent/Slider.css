@@ -1,0 +1,70 @@
+.slider-container {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slider {
+    display: flex;
+    gap: 5px;
+    height: 400px;
+ 
+    transition: transform 0.5s ease; /* Add transition for smoother slide animation */
+}
+
+.slide {
+    flex: 0 0 calc(100% / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ef5777, #34e7e4); /* Gradient colors */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for transform and box-shadow */
+}
+
+.slide:hover {
+    transform: translateY(-5px); /* Move the card up slightly on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add box shadow on hover for elevation effect */
+}
+
+.QrCode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: auto;
+    height: 200px;
+    background-color: #f1f1f1;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

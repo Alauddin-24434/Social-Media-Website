@@ -1,24 +1,22 @@
 
-import InteractiveGallery from '../../components/InteractiveGallery/InteractiveGallery';
+
+
 
 import InteractiveImage from '../../components/InteractiveImage/InteractiveImage';
+import Slider from '../../components/SliderComponent/Slider';
+
+
 
 const Home = () => {
 
-
     return (
-        <div className=''>
-       <InteractiveImage/>
+        <div className='bg-slate-300 '>
+            <InteractiveImage />
 
-            {/* interactive galary section */}
-            <div className="section">
-                <InteractiveGallery />
+            <div className='p-0 lg:p-[90px]'>
+                <Slider />
             </div>
 
-            {/* slider  section */}
-            {/* <div className="section">
-                <InteractiveSlider />
-            </div> */}
         </div>
     );
 };

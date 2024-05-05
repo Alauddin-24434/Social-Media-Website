@@ -4,6 +4,15 @@ import Home from "../pages/Home/Home";
 import Error from "../pages/Error/Error";
 import Signup from "../pages/Signup/Signup";
 import Login from "../pages/Login/Login";
+import ProfileLayout from "../layouts/ProfileLayout";
+import PrivateRoute from "./PrivateRoute";
+
+import CreateUserPost from "../pages/CreateUserPost/CreateUserPost";
+import UserCreatedPost from "../pages/UserCreatedPost/UserCreatedPost";
+import SearchUserPage from "../pages/SearchUserPage/SearchUserPage";
+
+import ProfileLanding from "../pages/ProfileLandingPage/ProfileLanding";
+
 
 const router = createBrowserRouter([
     {
@@ -15,6 +24,12 @@ const router = createBrowserRouter([
             path:'/',
             element:<Home/>
         },
+        {
+            path:'/SearchProfile/:id',
+            element:<SearchUserPage/>,
+            // loader: ({ params }) => fetch(`https://social-media-backend-gold.vercel.app/SearchProfile/${[params.id]}`)
+        },
+        
       
       ]
     },
@@ -26,6 +41,23 @@ const router = createBrowserRouter([
         path:'/login',
         element:<Login/>
     },
+  
+  
+    {
+      path:'/profile',
+      element:<PrivateRoute><ProfileLanding/></PrivateRoute>,
+  },
+    {
+        path:'/profile/createPostPage',
+        element:<PrivateRoute><CreateUserPost/></PrivateRoute>,
+    },
+    {
+        path:'/profile/userPostCreatedPage',
+        element:<PrivateRoute><UserCreatedPost/></PrivateRoute>,
+    },
+  
+
+    
   ]);
 
 

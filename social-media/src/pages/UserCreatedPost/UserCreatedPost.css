@@ -1,0 +1,89 @@
+.user-post-container {
+    
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added for absolute positioning */
+}
+
+.user-info {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+  
+    margin-bottom: 20px;
+}
+.userProfule_name_createdDate{
+    display: flex;
+    flex-direction: row;
+    justify-items: center ;
+    justify-content: space-between;
+    gap: 12px;
+}
+.more_btn{
+    color:black;
+    margin-right: 10px;
+    font-size: x-large;
+    
+}
+.more_btn:hover{
+    color: darkslategray;
+}
+.user-details{
+    display: flex;
+    flex-direction: row;
+    justify-items: center ;
+   
+    gap: 12px;
+}
+.morebutton_createDate{
+position: absolute;
+top: 0;
+right: 0;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.post-content {
+    margin-bottom: 20px;
+    position: relative; /* Added for absolute positioning */
+}
+
+.post-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.post-actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.action-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
