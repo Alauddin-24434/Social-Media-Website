@@ -1,4 +1,4 @@
-# Social Media Backend Server
+# Social Media Backend and frontend
 
 This repository contains the backend server code for the Social Media Website project.
 
