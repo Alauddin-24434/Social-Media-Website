@@ -21,25 +21,18 @@ cd Social-Media-Website/social-media-backend
 npm install
 
 ### 4. Create Environment Variables
-Create a .env file in the social-media-backend directory and add the following variables:
+Create a .env file in the social-media-backend directory and add the following variables and never changes onle copy and paste:
+
 DB_NAME=db_name
 DB_PASS=db_pass
 
 ### 5. Start the Server
 To start the server, you can use either npm start or nodemon index.js command:
+
 npm start
 # OR
 nodemon index.js
 
 The server will start running on http://localhost:5000 by default.
 
-API Documentation
-The backend server provides the following endpoints:
 
-GET /searchUser: Search for a user by ID.
-GET /combinedData: Get combined user data and posts.
-GET /loginUser: Login user by email.
-GET /userId: Get user data by ID.
-GET /allUsers: Get all users.
-POST /createUser: Create a new user.
-POST /createUserPost: Create a new user post.
